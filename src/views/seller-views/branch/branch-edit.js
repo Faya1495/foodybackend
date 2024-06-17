@@ -174,12 +174,12 @@ const SellerBranchEdit = () => {
               name={`address`}
               rules={[
                 {
-                  required: true,
+                  required: false,
                   message: t('required'),
                 },
               ]}
             >
-              <input className='address-input' ref={ref} placeholder={''} />
+              <input className='address-input' ref={ref} placeholder={ref} />
             </Form.Item>
           </Col>
           <Col span={24}>
